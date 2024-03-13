@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+  header nav .desktop-header-logo-wrapper,
+  header nav .desktop-header-nav-wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  header nav .mobile-header-logo-wrapper,
+  header nav .mobile-header-nav-wrapper {
+    display: none;
+  }
+}
