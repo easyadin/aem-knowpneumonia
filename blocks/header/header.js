@@ -6,16 +6,20 @@ import { loadFragment } from '../fragment/fragment.js';
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
+  // Load nav as fragment
   const navMeta = getMetadata('nav');
-  block.textContent = '';
-
-  // Load nav fragment
-  const navPath = navMeta.footer || '/nav';
+  const navPath = navMeta ? new URL(navMeta).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
-  // Decorate footer DOM
-  const nav = document.createElement('div');
+  // Decorate nav DOM
+  const nav = document.createElement('nav');
+  nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
+  // Remove useless element - No idea why its added / how
+  block.removeChild(block.firstChild);
+  nav.removeChild(nav.lastChild);
+
+  // Append
   block.append(nav);
 }

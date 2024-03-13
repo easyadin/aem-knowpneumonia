@@ -1,5 +1,12 @@
-/* header and nav layout */
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1118px;
+  margin: auto;
+}
 
-header .nav-tools {
-  display: none;
+header nav {
+    
 }
