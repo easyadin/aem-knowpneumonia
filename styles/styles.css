@@ -16,7 +16,7 @@
   --brand-purple: #783384;
 
   /* colors */
-  --link-color: --brand-purple;
+  --link-color: var(--brand-purple);
   --background-color: white;
   --light-color: #eee;
   --dark-color: #ccc;
@@ -77,10 +77,6 @@ body.appear {
   display: block;
 }
 
-header {
-  height: var(--nav-height);
-}
-
 h1,
 h2,
 h3,
@@ -98,18 +94,23 @@ h6 {
 h1 {
   font-size: var(--heading-font-size-xxl);
 }
+
 h2 {
   font-size: var(--heading-font-size-xl);
 }
+
 h3 {
   font-size: var(--heading-font-size-l);
 }
+
 h4 {
   font-size: var(--heading-font-size-m);
 }
+
 h5 {
   font-size: var(--heading-font-size-s);
 }
+
 h6 {
   font-size: var(--heading-font-size-xs);
 }
@@ -164,4 +165,5 @@ main img {
 header {
   padding-left: 4%;
   padding-right: 4%;
+  height: auto;
 }
