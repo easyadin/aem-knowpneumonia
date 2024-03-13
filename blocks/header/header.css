@@ -1,5 +1,9 @@
 @import url('./queries.css');
 
+header nav p {
+  margin: 0;
+}
+
 header nav {
   display: flex;
   flex-direction: row;
@@ -92,4 +96,103 @@ header nav .desktop-header-nav-wrapper ul li:last-child:hover > ul {
 
 header nav .desktop-header-nav-wrapper ul li:last-child ul li {
   text-decoration: none;
+}
+
+/* Mobile Navigation */
+header nav .mobile-header-logo-wrapper,
+header nav .mobile-header-nav-wrapper {
+  padding-top: 16px;
+}
+
+header nav .mobile-header-nav-wrapper {
+  place-self: start;
+}
+
+header nav .mobile-header-logo-wrapper picture,
+header nav .mobile-header-logo-wrapper picture img {
+  display: block;
+  max-width: 262px;
+  max-height: 33px;
+}
+
+header nav .mobile-header-logo-wrapper .default-content-wrapper {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+header nav .mobile-header-logo-wrapper .default-content-wrapper p {
+  font-size: 14px;
+  color: var(--brand-purple);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+header nav .mobile-header-logo-wrapper .default-content-wrapper p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+header
+  nav
+  .mobile-header-logo-wrapper
+  .default-content-wrapper
+  p:nth-child(2)
+  picture:last-child {
+  margin-left: -8px;
+}
+
+header
+  nav
+  .mobile-header-logo-wrapper
+  .default-content-wrapper
+  p:nth-child(2)
+  picture,
+header
+  nav
+  .mobile-header-logo-wrapper
+  .default-content-wrapper
+  p:nth-child(2)
+  picture
+  img {
+  width: 12px;
+  height: 6px;
+}
+
+header
+  nav
+  .mobile-header-logo-wrapper
+  .default-content-wrapper
+  p:nth-child(2)
+  picture {
+  rotate: 270deg;
+}
+
+header nav .mobile-header-nav-wrapper .default-content-wrapper {
+  background-color: var(--brand-purple);
+  padding: 4px;
+  height: fit-content;
+}
+
+header nav .mobile-header-nav-wrapper .default-content-wrapper p {
+  font-size: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+header nav .mobile-header-nav-wrapper .default-content-wrapper p picture,
+header nav .mobile-header-nav-wrapper .default-content-wrapper p picture img {
+  width: 30px;
+  height: 32px;
+}
+
+header nav .mobile-header-nav-wrapper .default-content-wrapper ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
