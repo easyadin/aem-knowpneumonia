@@ -14,6 +14,10 @@
   /* Brand colors */
 
   --brand-purple: #783384;
+  --brand-gray: #d6d2ca;
+  --brand-yellow: #f2c107;
+  --brand-blue: #4ebce8;
+  --brand-green: #45b274;
 
   /* colors */
   --link-color: var(--brand-purple);

@@ -1,0 +1,11 @@
+@media (width <= 767px) {
+  .section.fragment-container.desktop-header-menu-navigation {
+    display: none;
+  }
+}
+
+@media (width <= 1024px) {
+  .section.fragment-container.desktop-header-menu-navigation ul li a {
+    font-size: 0.813rem;
+  }
+}

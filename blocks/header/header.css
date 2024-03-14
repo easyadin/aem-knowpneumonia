@@ -1,9 +1,5 @@
 @import url('./queries.css');
 
-header nav p {
-  margin: 0;
-}
-
 header nav {
   display: flex;
   flex-direction: row;
@@ -11,12 +7,23 @@ header nav {
   align-items: center;
   max-width: 1118px;
   margin: auto;
+  position: relative;
+}
+
+header nav p {
+  margin: 0;
 }
 
 header nav .desktop-header-logo-wrapper > div picture {
   display: block;
   max-width: 284px;
   max-height: 36px;
+}
+
+header nav .desktop-header-nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 header nav .desktop-header-nav-wrapper ul {
@@ -56,48 +63,6 @@ header nav .desktop-header-nav-wrapper ul li:nth-child(2) a picture img {
   object-fit: cover;
 }
 
-header nav .desktop-header-nav-wrapper ul li:last-child {
-  color: var(--brand-purple);
-  line-height: 1.33;
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-  cursor: pointer;
-}
-
-header nav .desktop-header-nav-wrapper ul li:last-child picture {
-  width: 16px;
-  height: 16px;
-}
-
-header nav .desktop-header-nav-wrapper ul li:last-child picture:nth-child(2) {
-  width: 14px;
-  height: 8px;
-  display: flex;
-}
-
-header nav .desktop-header-nav-wrapper ul li:last-child ul {
-  display: none;
-  right: 13px;
-  top: 20px;
-  text-align: center;
-  margin: auto;
-  padding: 0;
-  text-decoration: none;
-}
-
-header nav .desktop-header-nav-wrapper ul li:last-child:hover > ul {
-  display: block;
-  position: absolute;
-}
-
-header nav .desktop-header-nav-wrapper ul li:last-child ul li {
-  text-decoration: none;
-}
-
 /* Mobile Navigation */
 header nav .mobile-header-logo-wrapper,
 header nav .mobile-header-nav-wrapper {
@@ -113,6 +78,8 @@ header nav .mobile-header-logo-wrapper picture img {
   display: block;
   max-width: 262px;
   max-height: 33px;
+  width: 100%;
+  height: 100%;
 }
 
 header nav .mobile-header-logo-wrapper .default-content-wrapper {

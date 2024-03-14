@@ -1,7 +1,11 @@
 @media (width <= 767px) {
   header nav .desktop-header-logo-wrapper,
-  header nav .desktop-header-nav-wrapper {
+  .section.desktop-header-nav-wrapper {
     display: none;
+  }
+
+  .mobile-header-logo-wrapper {
+    max-width: 200px;
   }
 }
 

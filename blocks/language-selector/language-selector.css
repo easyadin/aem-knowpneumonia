@@ -1,0 +1,62 @@
+.fragment-container.language-selector .language-selector {
+  width: fit-content;
+}
+
+.fragment-container.language-selector .language-selector ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.fragment-container.language-selector .language-selector ul li,
+.fragment-container.language-selector .language-selector ul li a {
+  text-decoration: none;
+}
+
+.fragment-container.language-selector .language-selector ul li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--brand-purple);
+  font-weight: 600;
+}
+
+.fragment-container.language-selector
+  .language-selector
+  ul
+  li
+  picture:first-child,
+.fragment-container.language-selector
+  .language-selector
+  ul
+  li
+  picture:first-child
+  img {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.fragment-container.language-selector
+  .language-selector
+  ul
+  li
+  picture:nth-child(2) {
+  width: 14px;
+  height: 8px;
+  display: flex;
+}
+
+.fragment-container.language-selector .language-selector ul li ul {
+  display: none;
+  position: absolute;
+  top: 26px;
+  left: 20px;
+}
+
+.fragment-container.language-selector .language-selector ul li:hover > ul {
+  display: block;
+}
