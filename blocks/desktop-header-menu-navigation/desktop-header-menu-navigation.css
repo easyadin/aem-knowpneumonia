@@ -135,11 +135,3 @@
 
   color: var(--brand-purple);
 }
-
-.section.fragment-container.desktop-header-menu-navigation
-  .default-content-wrapper
-  > ul
-  > li:hover
-  > ul {
-  display: flex;
-}

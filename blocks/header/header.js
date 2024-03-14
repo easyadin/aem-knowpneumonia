@@ -1,4 +1,5 @@
 import { getMetadata } from '../../scripts/aem.js';
+import desktopHeaderMenuNavigation from '../desktop-header-menu-navigation/desktop-header-menu-navigation.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 /**
@@ -22,4 +23,6 @@ export default async function decorate(block) {
 
   // Append
   block.append(nav);
+
+  desktopHeaderMenuNavigation(block);
 }

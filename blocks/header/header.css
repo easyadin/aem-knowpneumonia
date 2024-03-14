@@ -24,6 +24,7 @@ header nav .desktop-header-nav-wrapper {
   display: flex;
   align-items: center;
   gap: 10px;
+  z-index: 9999;
 }
 
 header nav .desktop-header-nav-wrapper ul {
