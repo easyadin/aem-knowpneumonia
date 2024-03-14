@@ -29,6 +29,18 @@ export default async function desktopHeaderMenuNavigation(block) {
 
   navigationList.forEach((n) => {
     n.addEventListener('click', (e) => {
+      closeAllDropdowns();
+
+      const navigationTriggerFirstElement = n.querySelector('a:first-child');
+      const navigationTriggerLastElement = n.querySelector('a:nth-child(2)');
+
+      navigationTriggerFirstElement.classList.add('nav-link-active');
+      navigationTriggerLastElement.classList.add('nav-link-active');
+
+      const navigationTriggerLastElementImage =
+        navigationTriggerLastElement.querySelector('img');
+      navigationTriggerLastElementImage.classList.add('img-filter-reset');
+
       e.preventDefault();
       e.stopPropagation();
 
