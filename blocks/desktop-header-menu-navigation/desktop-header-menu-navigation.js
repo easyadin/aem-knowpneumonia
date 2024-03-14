@@ -11,7 +11,18 @@ export default async function desktopHeaderMenuNavigation(block) {
     navigationList.forEach((n) => {
       const dropMenu = n.querySelector('ul');
       if (dropMenu) {
-        dropMenu.style.display = 'none';
+        dropMenu.classList.remove('dropdown-open');
+      }
+
+      n.querySelectorAll('a').forEach((link) => {
+        link.classList.remove('nav-link-active');
+        link.classList.add('nav-link-inactive');
+      });
+
+      const navigationTriggerLastElementImage =
+        n.querySelector('a:nth-child(2) img');
+      if (navigationTriggerLastElementImage) {
+        navigationTriggerLastElementImage.classList.remove('img-filter-reset');
       }
     });
   }
@@ -21,15 +32,12 @@ export default async function desktopHeaderMenuNavigation(block) {
       e.preventDefault();
       e.stopPropagation();
 
-      closeAllDropdowns();
-
       const dropMenu = n.querySelector('ul');
       if (dropMenu) {
-        dropMenu.style.display =
-          dropMenu.style.display === 'flex' ? 'none' : 'flex';
+        dropMenu.classList.toggle('dropdown-open');
         const aLinks = dropMenu.querySelectorAll('a');
         aLinks.forEach((alink) => {
-          alink.addEventListener('click', () => {
+          alink.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
             window.location.href = alink.href;
@@ -42,9 +50,8 @@ export default async function desktopHeaderMenuNavigation(block) {
     });
   });
 
-  document.addEventListener('click', function (e) {
+  document.addEventListener('click', (e) => {
     const isClickInside = block.contains(e.target);
-
     if (!isClickInside) {
       closeAllDropdowns();
     }

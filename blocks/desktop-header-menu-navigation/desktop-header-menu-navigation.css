@@ -135,3 +135,28 @@
 
   color: var(--brand-purple);
 }
+
+.dropdown-open {
+  display: flex !important;
+}
+
+.nav-link-active {
+  background-color: var(--brand-purple) !important;
+  background-image: none !important;
+  color: #fff !important;
+}
+
+.nav-link-inactive {
+  background-color: transparent;
+  background-image: linear-gradient(
+    0deg,
+    rgba(241, 239, 235, 1) -32%,
+    rgba(214, 210, 202, 1) 52%
+  );
+  color: var(--brand-purple);
+}
+
+.img-filter-reset {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(69deg)
+    brightness(105%) contrast(101%);
+}
