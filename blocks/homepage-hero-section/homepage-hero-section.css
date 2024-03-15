@@ -63,6 +63,12 @@
   float: right;
 }
 
+.homepage-hero-section.block > div > div:nth-child(2) picture img {
+  /* max-height: 558px;
+  height: 100%;
+  object-fit: cover; */
+}
+
 .homepage-hero-section-slider-nav-button-wrapper {
   display: flex;
   gap: 6px;

@@ -12,6 +12,8 @@ export default async function decorate(block) {
 
   Array.from(slides).forEach((slide, index) => {
     const button = document.createElement('button');
+    button.ariaLabel = 'hero-navigation';
+    button.title = index + 1;
     button.className = `homepage-hero-section-slider-nav-button slide-${
       index + 1
     }`;
