@@ -1,4 +1,6 @@
-@import url('./queries.css');
+.homepage-hero-section {
+  position: relative;
+}
 
 .homepage-hero-section.block > div {
   display: flex;
@@ -12,8 +14,9 @@
 .homepage-hero-section.block > div > div:first-child {
   position: absolute;
   z-index: 99999;
+  left: 10%;
   top: 8%;
-  left: 4%;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -38,4 +41,89 @@
 
 .homepage-hero-section.block > div > div:nth-child(2) {
   z-index: 0;
+}
+
+.homepage-hero-section.block > div > div:nth-child(2) ul {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  list-style: none;
+}
+
+.homepage-hero-section.block > div > div:nth-child(2) ul li ul {
+  font-size: 1rem;
+  color: #fff;
+  padding: 9px 12px;
+  background-color: rgb(30 30 30 / 70%);
+  font-weight: normal;
+  text-align: center;
+  width: fit-content;
+  position: relative;
+  top: -70px;
+  float: right;
+}
+
+.homepage-hero-section-slider-nav-button-wrapper {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  justify-content: center;
+  bottom: 40px;
+}
+
+.homepage-hero-section-slider-nav-button {
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  border: 1px solid #000;
+}
+
+.homepage-hero-section-slider-nav-button.active {
+  background-color: var(--brand-dark-gray);
+}
+
+.homepage-hero-section-slider-nav-button.inactive {
+  background-color: #fff;
+}
+
+.homepage-hero-section.block > div > div:nth-child(2) > ul > li {
+  display: none;
+}
+
+.homepage-hero-section.block > div > div:nth-child(2) > ul > li.active {
+  display: block;
+}
+
+/* Queries */
+@media (width >= 767px) {
+  .homepage-hero-section.block > div > div:first-child h1 {
+    font-size: 2.5rem !important;
+    max-width: 485px !important;
+  }
+
+  .homepage-hero-section.block > div > div:first-child p {
+    font-size: 1.15rem !important;
+    max-width: 330px !important;
+  }
+}
+
+@media (width <= 768px) {
+  .homepage-hero-section.block > div > div:nth-child(2) ul li ul {
+    display: none;
+  }
+
+  .homepage-hero-section.block > div > div:first-child {
+    top: 5%;
+    left: 4%;
+  }
+}
+
+@media (width <= 500px) {
+  .homepage-hero-section.block > div > div:first-child p:nth-child(3) {
+    display: none;
+  }
+
+  .homepage-hero-section-container {
+    border-top: 2px solid var(--brand-purple);
+  }
 }

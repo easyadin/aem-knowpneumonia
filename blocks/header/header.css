@@ -1,4 +1,6 @@
-@import url('./queries.css');
+header {
+  min-height: 135px;
+}
 
 header nav {
   display: flex;
@@ -163,4 +165,28 @@ header nav .mobile-header-nav-wrapper .default-content-wrapper ul {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+/* Media queries */
+
+@media (width <= 767px) {
+  header nav .desktop-header-logo-wrapper,
+  .section.desktop-header-nav-wrapper {
+    display: none;
+  }
+
+  .mobile-header-logo-wrapper {
+    max-width: 200px;
+  }
+
+  header.header-wrapper {
+    min-height: 110px;
+  }
+}
+
+@media (width >= 768px) {
+  header nav .mobile-header-logo-wrapper,
+  header nav .mobile-header-nav-wrapper {
+    display: none;
+  }
 }
