@@ -1,0 +1,132 @@
+.section.fragment-container.higher-risk-section-container {
+  margin-bottom: 60px;
+}
+
+.higher-risk-section.block > div {
+  max-width: var(--max-section-width);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: auto;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.higher-risk-section.block > div div:first-child {
+  flex: auto;
+  background-color: var(--brand-gray-1);
+}
+
+.higher-risk-section.block > div div:nth-child(2),
+.higher-risk-section.block > div div:nth-child(3),
+.higher-risk-section.block > div div:nth-child(4) {
+  flex: auto;
+  background-color: var(--brand-gray-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+
+  z-index: 1;
+  position: relative;
+}
+
+.higher-risk-section.block > div div:nth-child(3) {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.higher-risk-section.block > div div:nth-child(3)::after {
+  content: '';
+  height: 50px;
+  width: 50px;
+  background-color: var(--brand-gray);
+  border-radius: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.higher-risk-section.block > div div:nth-child(2) p,
+.higher-risk-section.block > div div:nth-child(3) p,
+.higher-risk-section.block > div div:nth-child(4) p {
+  margin: 0;
+  padding: 0;
+}
+
+.higher-risk-section.block > div div:nth-child(2) p:first-child,
+.higher-risk-section.block > div div:nth-child(3) p:first-child,
+.higher-risk-section.block > div div:nth-child(4) p:first-child {
+  font-size: 2rem;
+  line-height: normal;
+  color: var(--brand-gray-3);
+}
+
+.higher-risk-section.block > div div:nth-child(2) p:nth-child(2),
+.higher-risk-section.block > div div:nth-child(3) p:nth-child(2),
+.higher-risk-section.block > div div:nth-child(4) p:nth-child(2) {
+  font-size: 1.15rem;
+  color: var(--brand-purple);
+}
+
+.higher-risk-section.block > div div:nth-child(2) p:nth-child(3),
+.higher-risk-section.block > div div:nth-child(3) p:nth-child(3),
+.higher-risk-section.block > div div:nth-child(4) p:nth-child(3) {
+  margin-top: 20px;
+}
+
+.higher-risk-section.block div > div:first-child ul {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--brand-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 380px;
+  max-width: 500px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  width: 320px;
+}
+
+.higher-risk-section.block div > div:first-child ul li {
+  height: 100%;
+  width: 100%;
+}
+
+.higher-risk-section.block div > div:first-child ul li:first-child {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  z-index: 9;
+}
+
+.higher-risk-section.block div > div:first-child ul li:last-child {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 320px;
+  height: 100%;
+}
+
+.higher-risk-section.block div > div:first-child ul li:last-child picture,
+.higher-risk-section.block div > div:first-child ul li:last-child picture img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* Queries */
+@media (width <= 768px) {
+  .higher-risk-section.block > div {
+    flex-direction: column;
+  }
+}
+
+@media (width <= 500px) {
+}

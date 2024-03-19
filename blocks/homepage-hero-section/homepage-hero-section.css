@@ -5,7 +5,7 @@
 .homepage-hero-section.block > div:first-child {
   display: flex;
   position: relative;
-  max-width: 1118px;
+  max-width: var(--max-section-width);
   margin: auto;
   padding-left: 4%;
   padding-right: 4%;
