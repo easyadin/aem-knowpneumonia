@@ -136,3 +136,10 @@ footer
     display: none;
   }
 }
+
+@media (width <= 500px) {
+  footer .desktop-footer-navigations .default-content-wrapper ul,
+  footer .desktop-footer-navigations .default-content-wrapper ul li {
+    font-size: 1rem;
+  }
+}
