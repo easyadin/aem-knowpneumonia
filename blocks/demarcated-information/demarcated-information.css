@@ -1,3 +1,72 @@
-.demarcated-information {
-    
+.demarcated-information > div {
+  display: flex;
+  max-width: var(--max-section-width);
+  margin: auto;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.demarcated-information > div div {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  min-width: 290px;
+  margin: auto;
+}
+
+.demarcated-information > div div p:nth-child(2) {
+  display: flex;
+  font-size: 1rem;
+  align-items: end;
+}
+
+.demarcated-information > div div p:nth-child(2) a {
+  width: min-content;
+  min-width: 126px;
+}
+
+.demarcated-information > div div p:nth-child(2) picture {
+  width: 10px;
+  height: 10px;
+}
+
+.demarcated-information hr {
+  height: 120px;
+  rotate: 13deg;
+  margin: auto;
+}
+
+.demarcated-information picture,
+.demarcated-information picture img {
+  display: block;
+  max-height: 100px;
+  max-width: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.demarcated-information p {
+  padding: 0;
+  margin: 0;
+}
+
+@media (width <= 768px) {
+  .demarcated-information > div {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .demarcated-information > div div {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    min-width: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .demarcated-information hr {
+    display: none;
+  }
 }

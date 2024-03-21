@@ -1,7 +1,14 @@
 .information-hero {
   padding: 16px;
+  margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+  max-width: var(--max-section-width);
+}
+
+.information-hero ul {
+  max-width: 900px;
+  margin: auto;
 }
 
 .information-hero ul,
@@ -9,13 +16,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0;
   padding: 0;
   list-style: none;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .information-hero ul li picture,
@@ -23,4 +29,16 @@
   display: block;
   height: 12px;
   width: 12px;
+}
+
+@media (width <= 768px) {
+  .information-hero ul,
+  .information-hero ul li {
+    text-align: left;
+  }
+
+  .information-hero ul {
+    justify-content: left;
+    padding: 14px;
+  }
 }

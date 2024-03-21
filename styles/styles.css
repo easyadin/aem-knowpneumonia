@@ -164,3 +164,7 @@ header {
 .purple-background a {
   color: #fff;
 }
+
+.max-section-width {
+  max-width: var(--max-section-width);
+}
