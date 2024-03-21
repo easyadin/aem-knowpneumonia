@@ -1,0 +1,92 @@
+.embed {
+  width: unset;
+  text-align: center;
+  max-width: 800px;
+}
+
+.embed > div {
+  display: flex;
+  justify-content: center;
+}
+
+.embed.embed-twitter .twitter-tweet-rendered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.embed .embed-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+
+.embed .embed-placeholder > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+}
+
+.embed .embed-placeholder picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.embed .embed-placeholder-play button {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(3);
+  width: 24px;
+  height: 25px;
+  border: 0.5px solid #fff;
+  border-radius: 20px;
+  padding: 0;
+  background-color: var(--brand-purple-transparent);
+}
+
+.embed .embed-placeholder-play button::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 0;
+  height: 10px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid;
+  top: 7px;
+  left: 9px;
+  color: #fff;
+}
+
+.section.fragment-container.video-content.embed-container.video-transcript-container
+  .fragment-wrapper
+  > div {
+  min-width: 300px;
+  width: 100%;
+}
+
+main
+  > .section.fragment-container.video-content.embed-container.video-transcript-container {
+  max-width: var(--max-section-width);
+  margin: auto;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.section.fragment-container.video-content.embed-container.video-transcript-container
+  > .fragment-wrapper {
+  display: flex;
+  justify-content: start;
+  gap: 32px;
+}
+
+@media (width <= 768px) {
+  .section.fragment-container.video-content.embed-container.video-transcript-container
+    > .fragment-wrapper {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,38 @@
+.hero-description {
+  margin-top: 10%;
+}
+
+.hero-description p,
+.hero-description ul {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+
+.hero-description ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.hero-description p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.hero-description li {
+  font-size: 1rem;
+  font-weight: 500;
+  max-width: 600px;
+  line-height: 1.5rem;
+  color: var(--brand-gray-3);
+}
+
+@media (width <= 768px) {
+  .hero-description p {
+    font-size: 1.2rem;
+  }
+
+  .hero-description li {
+    font-size: 0.9rem;
+  }
+}

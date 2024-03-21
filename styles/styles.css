@@ -15,6 +15,7 @@
   /* Brand colors */
 
   --brand-purple: #783384;
+  --brand-purple-transparent: #783384a6;
   --brand-gray: #d6d2ca;
   --brand-yellow: #f2c107;
   --brand-blue: #4ebce8;
@@ -149,4 +150,17 @@ header {
   padding-left: 4%;
   padding-right: 4%;
   height: auto;
+}
+
+.purple-highlight {
+  color: var(--brand-purple);
+}
+
+.purple-background {
+  background-color: var(--brand-purple);
+  color: #fff;
+}
+
+.purple-background a {
+  color: #fff;
 }

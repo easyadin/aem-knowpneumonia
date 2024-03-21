@@ -1,0 +1,26 @@
+.information-hero {
+  padding: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.information-hero ul,
+.information-hero ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.information-hero ul li picture,
+.information-hero ul li picture img {
+  display: block;
+  height: 12px;
+  width: 12px;
+}

@@ -1,0 +1,51 @@
+.video-transcript.block > div > div > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.video-transcript.block > div > div > ul > li {
+  font-size: 1rem;
+}
+
+.video-transcript.block > div > div > ul > li:nth-child(1),
+.video-transcript.block > div > div > ul > li:nth-child(2) {
+  margin-top: 10px;
+}
+
+.video-transcript.block > div > div > ul > li:nth-child(1),
+.video-transcript.block > div > div > ul > li:nth-child(2),
+.video-transcript.block > div > div > ul > li:nth-child(4) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--brand-purple);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  justify-content: end;
+}
+
+.video-transcript.block > div > div > ul > li:nth-child(3) ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.video-transcript picture,
+.video-transcript picture img {
+  display: block;
+  height: 14px;
+  width: 14px;
+}
+
+.video-transcript.block > div > div > ul > li:nth-child(2),
+.video-transcript.block > div > div > ul > li:nth-child(3),
+.video-transcript.block > div > div > ul > li:nth-child(4) {
+  display: none;
+}
