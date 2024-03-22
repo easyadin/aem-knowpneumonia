@@ -60,10 +60,12 @@
 
   .demarcated-information > div div {
     border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
-    min-width: 100%;
     margin: auto;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 20px;
+    min-width: auto;
+    width: 100%;
+    max-width: -webkit-fill-available;
   }
 
   .demarcated-information hr {

@@ -6,6 +6,10 @@
   max-width: var(--max-section-width);
 }
 
+.information-hero.max-width-400 {
+  max-width: 400px;
+}
+
 .information-hero ul {
   max-width: 900px;
   margin: auto;
@@ -31,6 +35,11 @@
   width: 12px;
 }
 
+.information-hero.align-center ul {
+  text-align: center;
+  justify-content: center;
+}
+
 @media (width <= 768px) {
   .information-hero ul,
   .information-hero ul li {
@@ -40,5 +49,12 @@
   .information-hero ul {
     justify-content: left;
     padding: 14px;
+  }
+}
+
+@media (width <= 425px) {
+  .information-hero ul li,
+  .information-hero a {
+    font-size: 1rem;
   }
 }
