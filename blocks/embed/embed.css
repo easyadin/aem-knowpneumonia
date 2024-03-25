@@ -84,7 +84,19 @@ main
   gap: 32px;
 }
 
+.flex-direction-reverse {
+  padding-top: 10px;
+}
+
+.flex-direction-reverse .fragment-wrapper {
+  flex-direction: row-reverse;
+}
+
 @media (width <= 768px) {
+  .flex-direction-reverse > .fragment-wrapper {
+    flex-direction: column-reverse !important;
+  }
+
   .section.fragment-container.video-content.embed-container.video-transcript-container
     > .fragment-wrapper {
     flex-direction: column;
