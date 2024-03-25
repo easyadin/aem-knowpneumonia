@@ -16,67 +16,81 @@
   position: relative;
 }
 
-.angled-hero-information > div:last-child div {
-  position: relative;
-  overflow: hidden;
-  padding: 40px;
+.angled-hero-information > div:last-child ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-right: 50px;
   gap: 10px;
 }
 
-.angled-hero-information > div:last-child div::after {
-  content: '';
+.angled-hero-information > div:last-child ul li:nth-child(1) picture {
+  height: 90px;
+}
+
+.angled-hero-information > div:last-child ul li:nth-child(2) {
+  background-color: var(--brand-green);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 100%;
+  padding: 4px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.angled-hero-information > div:last-child ul li:nth-child(3) {
+  font-size: 0.98rem;
+}
+
+.angled-hero-information > div:last-child > div {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.angled-hero-information > div:last-child > div > p {
   position: absolute;
-  top: 50%;
-  right: 10px;
-  border-top: 140px solid transparent;
-  border-bottom: 140px solid transparent;
-  border-left: 40px solid #fff;
-  transform: translateY(-50%);
+  top: 0;
   z-index: -1;
-}
-
-.angled-hero-information > div:last-child div::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 4px;
-  border-top: 140px solid transparent;
-  border-bottom: 140px solid transparent;
-  border-left: 41px solid #0003;
-  transform: translateY(-50%);
-  z-index: -1;
-  filter: blur(3px);
-}
-
-/* .angled-hero-information > div:last-child div:nth-child(even) {
-  background-color: var(--brand-gray-4);
-  margin-left: -50px;
-  z-index: -9;
-} */
-
-/* .angled-hero-information > div:last-child div:nth-child(even)::after {
-  border-left-color: var(--brand-gray-4);
-}
-
-.angled-hero-information > div:last-child div:nth-child(odd) {} */
-
-.angled-hero-information p {
+  right: 0;
   padding: 0;
   margin: 0;
-  font-size: 0.98rem;
-  text-align: center;
-  max-width: fit-content;
+}
+
+.angled-hero-information > div:last-child > div:nth-child(even) {
+  margin-left: -10px;
+}
+
+.angled-hero-information > div:last-child > div:nth-child(odd) {
+  z-index: 9;
+}
+.angled-hero-information > div:last-child > div:nth-child(odd) > p {
+  background-color: var(--brand-gray-4);
+}
+
+.angled-hero-information > div:last-child > div:last-child {
+  background-color: var(--brand-gray-4);
+}
+
+.angled-hero-information > div:last-child > div > p picture,
+.angled-hero-information > div:last-child > div > p picture img {
+  min-height: 350px;
 }
 
 .angled-hero-information picture,
 .angled-hero-information picture img {
   display: block;
-  max-width: 100px;
-  max-height: 90px;
   height: 100%;
   width: 100%;
 }
