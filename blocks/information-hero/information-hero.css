@@ -28,6 +28,10 @@
   font-size: 1.2rem;
 }
 
+.information-hero ul li:first-child {
+  font-weight: 600;
+}
+
 .information-hero ul li picture,
 .information-hero ul li picture img {
   display: block;
