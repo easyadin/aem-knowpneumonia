@@ -58,8 +58,10 @@
     justify-content: center;
   }
 
-  .demarcated-information > div div {
+  .demarcated-information > div div:not(:last-child) {
     border-bottom: 1px solid #eee;
+  }
+  .demarcated-information > div div {
     margin: auto;
     justify-content: flex-start;
     padding: 20px;
