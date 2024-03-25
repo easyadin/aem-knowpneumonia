@@ -1,6 +1,4 @@
 /* Load language selector fragment */
-@import url('../language-selector/language-selector.css');
-@import url('../desktop-header-menu-navigation/desktop-header-menu-navigation.css');
 
 /* suppress nested section padding */
 .fragment-wrapper > .section {

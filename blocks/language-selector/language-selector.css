@@ -1,19 +1,20 @@
-.fragment-container.language-selector .language-selector {
+.language-selector {
   width: fit-content;
+  z-index: 99999;
 }
 
-.fragment-container.language-selector .language-selector ul {
+.language-selector ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.fragment-container.language-selector .language-selector ul li,
-.fragment-container.language-selector .language-selector ul li a {
+.language-selector ul li,
+.language-selector ul li a {
   text-decoration: none;
 }
 
-.fragment-container.language-selector .language-selector ul li {
+.language-selector ul li {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -24,39 +25,22 @@
   font-weight: 600;
 }
 
-.fragment-container.language-selector
-  .language-selector
-  ul
-  li
-  picture:first-child,
-.fragment-container.language-selector
-  .language-selector
-  ul
-  li
-  picture:first-child
-  img {
+.language-selector ul li picture:first-child,
+.language-selector ul li picture:first-child img {
   display: block;
   width: 16px;
   height: 16px;
 }
 
-.fragment-container.language-selector
-  .language-selector
-  ul
-  li
-  picture:nth-child(2) {
+.language-selector ul li picture:nth-child(2) {
   width: 14px;
   height: 8px;
   display: flex;
 }
 
-.fragment-container.language-selector .language-selector ul li ul {
+.language-selector ul li ul {
   display: none;
   position: absolute;
   top: 26px;
   left: 20px;
-}
-
-.fragment-container.language-selector .language-selector ul li:hover > ul {
-  display: block;
 }

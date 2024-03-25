@@ -1,3 +1,5 @@
+@import url('../desktop-header-menu-navigation/desktop-header-menu-navigation.css');
+
 header {
   min-height: 135px;
 }
@@ -26,7 +28,7 @@ header nav .desktop-header-nav-wrapper {
   display: flex;
   align-items: center;
   gap: 10px;
-  z-index: 9;
+  z-index: 9999;
 }
 
 header nav .desktop-header-nav-wrapper ul {

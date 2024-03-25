@@ -1,7 +1,7 @@
 .section.fragment-container.desktop-header-menu-navigation {
   position: absolute;
   top: 56px;
-  z-index: 9999999;
+  z-index: 999;
   width: 100%;
 }
 
