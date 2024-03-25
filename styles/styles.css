@@ -23,6 +23,7 @@
   --brand-gray-1: #edebe8;
   --brand-gray-2: #646464;
   --brand-gray-3: #363636;
+  --brand-gray-4: #e8e4dc;
 
   /* colors */
   --link-color: var(--brand-purple);
@@ -164,4 +165,3 @@ header {
 .purple-background a {
   color: #fff;
 }
-
