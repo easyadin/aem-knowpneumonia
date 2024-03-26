@@ -19,11 +19,14 @@
   --brand-gray: #d6d2ca;
   --brand-yellow: #f2c107;
   --brand-blue: #4ebce8;
+  --brand-blue-2: #2f97d1;
   --brand-green: #45b274;
+  --brand-green-2: #288650;
   --brand-gray-1: #edebe8;
   --brand-gray-2: #646464;
   --brand-gray-3: #363636;
   --brand-gray-4: #e8e4dc;
+  --brand-indigo: #d12f6d;
 
   /* colors */
   --link-color: var(--brand-purple);
