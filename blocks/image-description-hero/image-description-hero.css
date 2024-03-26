@@ -1,0 +1,87 @@
+.image-description-hero {
+  max-width: var(--max-section-width);
+  padding-left: 4%;
+  padding-right: 4%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.image-description-hero > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.image-description-hero > div > div:last-child {
+  flex: 1;
+}
+
+.image-description-hero > div > div:last-child ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.image-description-hero > div > div:last-child ul li:first-child {
+  font-size: 2rem;
+}
+
+.image-description-hero > div > div:last-child ul li:nth-child(2) {
+  font-size: 1.2rem;
+}
+
+.image-description-hero > div > div:last-child ul li:last-child {
+  position: relative;
+  background-color: var(--brand-purple);
+
+  padding: 8px 20px 8px 4px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image-description-hero > div > div:last-child ul li:last-child::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 5px solid var(--brand-purple);
+  transform: translateY(-50%);
+}
+
+.image-description-hero > div > div:last-child ul li:last-child a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+@media (width <= 768px) {
+  .image-description-hero > div > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-description-hero > div > div:last-child ul li:first-child {
+    font-size: 1.5rem;
+  }
+
+  .image-description-hero > div > div:last-child ul li:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  .image-description-hero > div > div:first-child picture {
+    max-width: 150px;
+  }
+}
