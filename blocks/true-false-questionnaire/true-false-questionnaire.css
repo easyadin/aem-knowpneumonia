@@ -1,0 +1,141 @@
+.true-false-questionnaire {
+  max-width: var(--max-section-width);
+  padding-left: 4%;
+  padding-right: 4%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.true-false-questionnaire > div {
+  background-color: var(--brand-gray-4);
+  padding: 80px;
+  position: relative;
+}
+
+.true-false-questionnaire > div::before {
+  content: '';
+  background-image: url('https://main--aem-knowpneumonia--easyadin.hlx.live/assets/media_163c2ae977b6e0ed34b840fc3ad0e9b4bd1a308bc.png');
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100%;
+  width: 71px;
+  background-size: 100% 100%;
+  top: 0;
+  left: 0;
+}
+
+.true-false-questionnaire > div:first-child {
+  display: flex;
+  align-items: end;
+  gap: 4px;
+}
+
+.true-false-questionnaire > div:first-child > div:first-child {
+  margin-right: 30px;
+}
+
+.true-false-questionnaire > div:first-child > div {
+  min-width: 100px;
+  padding: 30px 0 30px 0;
+}
+
+.true-false-questionnaire > div:first-child > div:first-child:before {
+  display: none;
+}
+
+.true-false-questionnaire > div:first-child > div::before {
+  content: '';
+  border: 1px solid var(--brand-purple);
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  transform: translateY(8px);
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.true-false-questionnaire > div:not(:first-child) > div p:last-child {
+  color: var(--brand-gray-3);
+}
+
+.true-false-questionnaire p,
+strong {
+  padding: 0;
+  margin: 0;
+  color: var(--brand-purple);
+}
+
+.true-false-questionnaire > div a {
+  position: relative;
+  background-color: var(--brand-purple);
+  padding: 8px 20px 8px 0;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.true-false-questionnaire > div a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 10px solid var(--brand-purple);
+  transform: translateY(-50%);
+}
+
+@media (width <= 768px) {
+  .true-false-questionnaire::before {
+    display: none;
+  }
+
+  .true-false-questionnaire > div {
+    padding: 30px;
+  }
+
+  .true-false-questionnaire > div::before {
+    display: none;
+  }
+
+  .true-false-questionnaire > div:first-child {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .true-false-questionnaire > div:first-child > div {
+    padding: 0;
+  }
+
+  .true-false-questionnaire > div:first-child > div:first-child {
+    margin-right: 0;
+  }
+
+  .true-false-questionnaire > div:first-child > div::before {
+    transform: translateY(10px);
+    border-width: 2px;
+  }
+
+  .true-false-questionnaire > div a {
+    max-width: 230px;
+    font-size: 1rem;
+  }
+
+  .true-false-questionnaire > div a::after {
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+}
