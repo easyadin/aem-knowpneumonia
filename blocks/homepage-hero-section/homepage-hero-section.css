@@ -29,7 +29,7 @@
   color: var(--brand-purple);
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: var(--font-size-xs);
   margin: 0;
   line-height: normal;
   max-width: 250px;
@@ -37,7 +37,7 @@
 
 .homepage-hero-section.block > div > div:first-child p {
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: var(--font-size-xxs);
   margin: 0;
   max-width: 200px;
 }
@@ -92,8 +92,8 @@
 }
 
 .homepage-hero-section.block > div:first-child > div:last-child ul li ul {
-  font-size: 1rem;
-  color: #fff;
+  font-size: var(--font-size-xs);
+  color: var(--text-white);
   padding: 9px 12px;
   background-color: rgb(30 30 30 / 70%);
   font-weight: normal;
@@ -126,7 +126,7 @@
 }
 
 .homepage-hero-section-slider-nav-button.inactive {
-  background-color: #fff;
+  background-color: var(--text-white);
 }
 
 .homepage-hero-section.block > div > div:nth-child(2) > ul > li {
@@ -140,12 +140,12 @@
 /* Queries */
 @media (width >= 767px) {
   .homepage-hero-section.block > div > div:first-child h1 {
-    font-size: 2.5rem !important;
+    font-size: var(--font-size-xl); !important;
     max-width: 485px !important;
   }
 
   .homepage-hero-section.block > div > div:first-child p {
-    font-size: 1.15rem !important;
+    font-size: var(--font-size-xs); !important;
     max-width: 330px !important;
   }
 }

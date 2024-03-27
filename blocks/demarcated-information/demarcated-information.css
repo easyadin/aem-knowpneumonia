@@ -18,7 +18,7 @@
 
 .demarcated-information > div div p:nth-child(2) {
   display: flex;
-  font-size: 1rem;
+  font-size: var(--font-size-xs);
   align-items: end;
 }
 

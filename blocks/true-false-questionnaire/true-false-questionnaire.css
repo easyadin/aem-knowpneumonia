@@ -57,7 +57,7 @@
   display: inline-block;
   transform: translateY(8px);
   border-radius: 100%;
-  background-color: #fff;
+  background-color: var(--text-white);
 }
 
 .true-false-questionnaire > div:not(:first-child) > div p:last-child {
@@ -80,7 +80,7 @@ strong {
   max-width: 350px;
   text-align: center;
   margin-top: 10px;
-  color: #fff;
+  color: var(--text-white);
   text-decoration: none;
 }
 
@@ -131,7 +131,7 @@ strong {
 
   .true-false-questionnaire > div a {
     max-width: 230px;
-    font-size: 1rem;
+    font-size: var(--font-size-xs);
   }
 
   .true-false-questionnaire > div a::after {

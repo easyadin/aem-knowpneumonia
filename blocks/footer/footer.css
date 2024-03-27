@@ -33,7 +33,7 @@ footer .desktop-footer-navigations .default-content-wrapper ul {
   justify-content: space-around;
   gap: 20px;
   align-items: baseline;
-  font-size: 0.9rem;
+  font-size: var(--font-size-xxs);
   margin: 0;
   padding: 0;
   color: var(--brand-purple);
@@ -84,7 +84,7 @@ footer
   li
   ul
   a {
-  font-size: 1rem;
+  font-size: var(--font-size-xs);
 }
 
 footer
@@ -106,7 +106,7 @@ footer
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: var(--font-size-md);
   }
 
   footer .desktop-footer-navigations .default-content-wrapper ul li a {
@@ -138,6 +138,6 @@ footer
 @media (width <= 500px) {
   footer .desktop-footer-navigations .default-content-wrapper ul,
   footer .desktop-footer-navigations .default-content-wrapper ul li {
-    font-size: 1rem;
+    font-size: var(--font-size-xs);
   }
 }

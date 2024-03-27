@@ -24,11 +24,11 @@
 }
 
 .image-description-hero > div > div:last-child ul li:first-child {
-  font-size: 2rem;
+  font-size: var(--font-size-lg);
 }
 
 .image-description-hero > div > div:last-child ul li:nth-child(2) {
-  font-size: 1.2rem;
+  font-size: var(--font-size-sm);;
 }
 
 .image-description-hero > div > div:last-child ul li:last-child {
@@ -59,8 +59,8 @@
 }
 
 .image-description-hero > div > div:last-child ul li:last-child a {
-  color: #fff;
-  font-size: 1rem;
+  color: var(--text-white);
+  font-size: var(--font-size-xs);
   text-decoration: none;
   text-align: center;
   width: 100%;
@@ -74,11 +74,11 @@
   }
 
   .image-description-hero > div > div:last-child ul li:first-child {
-    font-size: 1.5rem;
+    font-size: var(--font-size-lg);
   }
 
   .image-description-hero > div > div:last-child ul li:nth-child(2) {
-    font-size: 1.2rem;
+    font-size: var(--font-size-sm);;
   }
 
   .image-description-hero > div > div:first-child picture {

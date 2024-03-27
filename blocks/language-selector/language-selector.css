@@ -20,7 +20,7 @@
   gap: 4px;
   position: relative;
   cursor: pointer;
-  font-size: 16px;
+  font-size: var(--font-size-xs);
   color: var(--brand-purple);
   font-weight: 600;
 }

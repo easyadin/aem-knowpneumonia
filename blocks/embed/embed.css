@@ -41,7 +41,7 @@
   transform: scale(3);
   width: 24px;
   height: 25px;
-  border: 0.5px solid #fff;
+  border: 0.5px solid var(--text-white);
   border-radius: 20px;
   padding: 0;
   background-color: var(--brand-purple-transparent);
@@ -59,7 +59,7 @@
   border-left: 6px solid;
   top: 7px;
   left: 9px;
-  color: #fff;
+  color: var(--text-white);
 }
 
 .section.fragment-container.video-content.embed-container.video-transcript-container

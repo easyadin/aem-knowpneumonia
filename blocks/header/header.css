@@ -43,7 +43,7 @@ header nav .desktop-header-nav-wrapper ul a {
 }
 
 header nav .desktop-header-nav-wrapper ul li:first-child {
-  font-size: 16px;
+  font-size: var(--font-size-xs);
   color: var(--brand-purple);
   text-decoration: underline;
   font-weight: 600;
@@ -94,7 +94,7 @@ header nav .mobile-header-logo-wrapper .default-content-wrapper {
 }
 
 header nav .mobile-header-logo-wrapper .default-content-wrapper p {
-  font-size: 14px;
+  font-size: var(--font-size-xxs);
   color: var(--brand-purple);
   text-decoration: underline;
   font-weight: 500;
@@ -148,8 +148,8 @@ header nav .mobile-header-nav-wrapper .default-content-wrapper {
 }
 
 header nav .mobile-header-nav-wrapper .default-content-wrapper p {
-  font-size: 10px;
-  color: #fff;
+  font-size: var(--font-size-xxs);;
+  color: var(--text-white);
   display: flex;
   flex-direction: column;
   align-items: center;

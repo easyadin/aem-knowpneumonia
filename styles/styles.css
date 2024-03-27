@@ -13,7 +13,6 @@
 :root {
   --max-section-width: 1118px;
   /* Brand colors */
-
   --brand-purple: #783384;
   --brand-purple-transparent: #783384a6;
   --brand-gray: #d6d2ca;
@@ -34,6 +33,7 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  --text-white: #fff;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
@@ -54,8 +54,22 @@
   --heading-font-size-s: 20px;
   --heading-font-size-xs: 18px;
 
+  /* font sizes */
+  --font-size-xxs: 0.9rem;
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.5rem;
+  --font-size-md: 1.8rem;
+  --font-size-lg: 2.1rem;
+  --font-size-xl: 2.4rem;
+
+
+
   /* nav height */
   --nav-height: auto;
+
+  /* padding */
+  --base-padding-left: 4%;
+  --base-padding-right: 4%;
 }
 
 @font-face {
@@ -162,9 +176,9 @@ header {
 
 .purple-background {
   background-color: var(--brand-purple);
-  color: #fff;
+  color: var(--text-white);
 }
 
 .purple-background a {
-  color: #fff;
+  color: var(--text-white);
 }

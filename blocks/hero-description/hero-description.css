@@ -19,12 +19,12 @@
 }
 
 .hero-description p {
-  font-size: 1.8rem;
+  font-size: var(--font-size-md);
   font-weight: 500;
 }
 
 .hero-description li {
-  font-size: 1rem;
+  font-size: var(--font-size-xs);
   font-weight: 500;
   max-width: 600px;
   line-height: 1.5rem;
@@ -33,10 +33,10 @@
 
 @media (width <= 768px) {
   .hero-description p {
-    font-size: 1.2rem;
+    font-size: var(--font-size-sm);
   }
 
   .hero-description li {
-    font-size: 0.9rem;
+    font-size: var(--font-size-xxs);
   }
 }

@@ -8,7 +8,7 @@
 .section.fragment-container.desktop-header-menu-navigation ul {
   list-style: none;
   text-decoration: none;
-  font-size: 0.938rem;
+  font-size: var(--font-size-xxs);
   font-weight: 600;
   padding: 0;
 }
@@ -111,7 +111,7 @@
   > a {
   background-color: var(--brand-purple);
   background-image: none;
-  color: #fff;
+  color: var(--text-white);
 }
 
 .section.fragment-container.desktop-header-menu-navigation ul li a {
@@ -170,6 +170,6 @@
 
 @media (width <= 1024px) {
   .section.fragment-container.desktop-header-menu-navigation ul li a {
-    font-size: 0.813rem;
+    font-size: var(--font-size-xxs);
   }
 }
