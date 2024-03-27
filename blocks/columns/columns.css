@@ -1,6 +1,10 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  padding-left: var(--base-padding-left);
+  padding-right: var(--base-padding-right);
+  margin: auto;
+  max-width: var(--max-section-width);
 }
 
 .columns img {
@@ -17,6 +21,13 @@
 
 .columns > div > .columns-img-col img {
   display: block;
+}
+
+.columns.hospitalization-risk-statistics.block.columns-2-cols
+  > div
+  > div:last-child {
+  margin: auto;
+  text-align: center;
 }
 
 @media (width >= 900px) {

@@ -1,0 +1,48 @@
+.health-condition-chart {
+  padding-left: var(--base-padding-left);
+  padding-right: var(--base-padding-right);
+  margin: auto;
+  max-width: var(--max-section-width);
+}
+
+.health-condition-chart > div > div:first-child {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--brand-gray-3);
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.health-condition-chart > div > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  position: relative;
+  flex-direction: column;
+}
+
+.health-condition-chart > div > div:last-child td > p:first-child {
+  background-color: var(--brand-gray-1);
+}
+
+.health-condition-chart > div > div:last-child td > p:first-child > picture {
+  display: block;
+  margin: auto;
+  padding: 30px;
+}
+
+.health-condition-chart > div > div:last-child td > p:last-child {
+  margin-top: -24px;
+}
+
+.health-condition-chart > div > div:last-child td > p:last-child picture {
+  width: fit-content;
+  display: block;
+  margin: auto;
+}
+
+.health-condition-chart p {
+  margin: 0;
+  padding: 0;
+}
