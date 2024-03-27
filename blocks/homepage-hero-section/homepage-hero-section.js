@@ -17,6 +17,7 @@ export default async function decorate(block) {
     button.className = `homepage-hero-section-slider-nav-button slide-${
       index + 1
     }`;
+
     button.addEventListener('click', () => {
       slides.forEach((s) => s.classList.remove('active'));
       Array.from(sliderNav.children).forEach((b) =>
