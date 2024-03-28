@@ -7,7 +7,7 @@ export default function decorate(block) {
     '.angled-hero-information > div:last-child div',
   );
 
-  let zIndex = angledBlocks.length;
+  const zIndex = angledBlocks.length;
 
   angledBlocks.forEach((element) => {
     element.style.zIndex = zIndex - 1;

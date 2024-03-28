@@ -45,9 +45,7 @@ const loadEmbed = (block, link, autoplay) => {
     },
   ];
 
-  const config = EMBEDS_CONFIG.find((e) => 
-    e.match.some((match) => link.includes(match))
-  );
+  const config = EMBEDS_CONFIG.find((e) => e.match.some((match) => link.includes(match)));
   const url = new URL(link);
   if (config) {
     block.innerHTML = config.embed(url, autoplay);

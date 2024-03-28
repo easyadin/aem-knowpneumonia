@@ -19,8 +19,7 @@ export default async function desktopHeaderMenuNavigation(block) {
         link.classList.add('nav-link-inactive');
       });
 
-      const navigationTriggerLastElementImage =
-        n.querySelector('a:nth-child(2) img');
+      const navigationTriggerLastElementImage = n.querySelector('a:nth-child(2) img');
       if (navigationTriggerLastElementImage) {
         navigationTriggerLastElementImage.classList.remove('img-filter-reset');
       }
@@ -37,8 +36,7 @@ export default async function desktopHeaderMenuNavigation(block) {
       navigationTriggerFirstElement.classList.add('nav-link-active');
       navigationTriggerLastElement.classList.add('nav-link-active');
 
-      const navigationTriggerLastElementImage =
-        navigationTriggerLastElement.querySelector('img');
+      const navigationTriggerLastElementImage = navigationTriggerLastElement.querySelector('img');
       navigationTriggerLastElementImage.classList.add('img-filter-reset');
 
       e.preventDefault();
@@ -49,9 +47,9 @@ export default async function desktopHeaderMenuNavigation(block) {
         dropMenu.classList.toggle('dropdown-open');
         const aLinks = dropMenu.querySelectorAll('a');
         aLinks.forEach((alink) => {
-          alink.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
+          alink.addEventListener('click', (aEvent) => {
+            aEvent.preventDefault();
+            aEvent.stopPropagation();
             window.location.href = alink.href;
           });
         });
