@@ -4,6 +4,8 @@
   margin: auto;
   margin-bottom: 40px;
   gap: 10px;
+  padding-left: var(--base-padding-left);
+  padding-right: var(--base-padding-right);
 }
 
 .demarcated-information > div div {
@@ -14,6 +16,7 @@
   gap: 16px;
   min-width: 290px;
   margin: auto;
+  justify-content: center;
 }
 
 .demarcated-information > div div p:nth-child(2) {

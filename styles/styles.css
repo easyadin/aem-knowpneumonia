@@ -152,6 +152,10 @@ a {
   color: var(--brand-purple);
 }
 
+main > .section {
+  margin-bottom: 6% !important;
+}
+
 main img {
   max-width: 100%;
   width: auto;

@@ -1,8 +1,6 @@
 .information-hero {
   padding: 16px;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
   max-width: var(--max-section-width);
 }
 
@@ -25,7 +23,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: var(--font-size-sm);;
+  font-size: var(--font-size-sm);
 }
 
 .information-hero ul li:first-child {
