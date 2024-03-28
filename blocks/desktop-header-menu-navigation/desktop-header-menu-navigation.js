@@ -4,7 +4,7 @@
  */
 export default async function desktopHeaderMenuNavigation(block) {
   const navigationList = block.querySelectorAll(
-    '.fragment-container.desktop-header-menu-navigation .default-content-wrapper > ul > li'
+    '.fragment-container.desktop-header-menu-navigation .default-content-wrapper > ul > li',
   );
 
   function closeAllDropdowns() {

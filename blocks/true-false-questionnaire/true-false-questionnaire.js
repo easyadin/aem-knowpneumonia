@@ -4,19 +4,19 @@
  */
 export default function decorate(block) {
   const questionElement = block.querySelector(
-    '.true-false-questionnaire > div:first-child'
+    '.true-false-questionnaire > div:first-child',
   );
   const trueElement = block.querySelector(
-    '.true-false-questionnaire > div:first-child div:nth-child(2)'
+    '.true-false-questionnaire > div:first-child div:nth-child(2)',
   );
   const falseElement = block.querySelector(
-    '.true-false-questionnaire > div:first-child div:nth-child(3)'
+    '.true-false-questionnaire > div:first-child div:nth-child(3)',
   );
   const trueAnswer = block.querySelector(
-    '.true-false-questionnaire > div:nth-child(2)'
+    '.true-false-questionnaire > div:nth-child(2)',
   );
   const falseAnswer = block.querySelector(
-    '.true-false-questionnaire > div:nth-child(3)'
+    '.true-false-questionnaire > div:nth-child(3)',
   );
 
   trueAnswer.style.display = 'none';

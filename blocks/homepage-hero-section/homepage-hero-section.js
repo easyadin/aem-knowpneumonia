@@ -4,7 +4,7 @@
  */
 export default async function decorate(block) {
   const slides = block.querySelectorAll(
-    '.homepage-hero-section.block > div > div:nth-child(2) > ul > li'
+    '.homepage-hero-section.block > div > div:nth-child(2) > ul > li',
   );
 
   const sliderNav = document.createElement('div');
@@ -12,22 +12,16 @@ export default async function decorate(block) {
 
   Array.from(slides).forEach((slide, index) => {
     const button = document.createElement('button');
-    button.ariaLabel = 'hero-navigation';
-    button.title = index + 1;
-    button.className = `homepage-hero-section-slider-nav-button slide-${
-      index + 1
-    }`;
+    button.ariaLabel = 'hero navigation';
+    button.title = `${index + 1}`;
+    button.className = `homepage-hero-section-slider-nav-button slide-${index + 1}`;
 
     button.addEventListener('click', () => {
-      slides.forEach((s) => s.classList.remove('active'));
-      Array.from(sliderNav.children).forEach((b) =>
-        b.classList.remove('active')
-      );
+      slides.forEach((s) => { s.classList.remove('active'); s.style.display = 'none'; });
+      Array.from(sliderNav.children).forEach((b) => b.classList.remove('active'));
 
       slide.classList.add('active');
       button.classList.add('active');
-
-      slides.forEach((s) => (s.style.display = 'none'));
       slide.style.display = 'block';
     });
 
