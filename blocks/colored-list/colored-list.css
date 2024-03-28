@@ -44,6 +44,12 @@
   border-radius: 100%;
 }
 
+.color-blue-2 li::before,
+.color-green-2 li::before,
+.color-indigo li::before {
+  background-color: transparent;
+}
+
 .color-blue-2 li::before {
   background-color: var(--brand-blue-2);
 }
@@ -56,10 +62,13 @@
   background-color: var(--brand-indigo);
 }
 
-@media (width <= 768px) {
+@media (max-width: 768px) {
   .section.fragment-container.colored-list-container
     .fragment-wrapper
-    > div:first-child {
+    > div:first-child,
+  .section.fragment-container.colored-list-container
+    .fragment-wrapper
+    > div:last-child {
     max-width: 100%;
   }
 
