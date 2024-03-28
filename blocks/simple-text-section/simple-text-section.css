@@ -1,0 +1,24 @@
+.simple-text-section {
+  max-width: var(--max-section-width);
+  padding-left: 4%;
+  padding-right: 4%;
+  margin: auto;
+}
+
+.simple-text-section > div:first-child {
+  font-size: var(--font-size-lg);
+}
+
+.simple-text-section p {
+  margin: 0;
+}
+
+@media (width <= 768px) {
+  .simple-text-section > div:not(:first-child) {
+    font-size: var(--font-size-xs);
+  }
+
+  .simple-text-section > div:first-child {
+    font-size: var(--font-size-sm);
+  }
+}

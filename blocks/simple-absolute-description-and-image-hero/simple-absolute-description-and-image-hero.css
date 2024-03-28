@@ -1,0 +1,58 @@
+.simple-absolute-description-and-image-hero > div {
+  max-width: var(--max-section-width);
+  padding-left: 4%;
+  padding-right: 4%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.simple-absolute-description-and-image-hero > div > div:first-child {
+  position: absolute;
+  padding-left: 4%;
+  max-width: 400px;
+}
+
+.simple-absolute-description-and-image-hero h3 {
+  font-size: var(--font-size-xs);
+  margin: 0;
+}
+
+.simple-absolute-description-and-image-hero p {
+  font-size: var(--font-size-xxs);
+  margin: 0;
+}
+
+.simple-absolute-description-and-image-hero
+  > div
+  > div:last-child
+  p:last-child {
+  display: none;
+}
+
+@media (width <= 768px) {
+  .simple-absolute-description-and-image-hero > div {
+    min-height: 300px;
+    height: 100%;
+  }
+
+  .simple-absolute-description-and-image-hero > div > div {
+    height: 100%;
+  }
+
+  .simple-absolute-description-and-image-hero > div > div:first-child {
+    top: 4%;
+    max-width: 250px;
+  }
+
+  .simple-absolute-description-and-image-hero p:first-child {
+    display: none;
+  }
+  .simple-absolute-description-and-image-hero
+    > div
+    > div:last-child
+    p:last-child {
+    display: block;
+  }
+}
