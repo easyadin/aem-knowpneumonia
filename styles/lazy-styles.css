@@ -3,6 +3,7 @@
   padding-right: var(--base-padding-right);
   margin: auto;
   max-width: var(--max-section-width);
+  position: relative;
 }
 
 .section.age-chronic-health-hero .default-content-wrapper {
@@ -94,4 +95,36 @@
 
 .section.age-chronic-health-hero p {
   margin: 0;
+}
+
+@media (width <=700px) {
+  .section.age-chronic-health-hero .default-content-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .section.age-chronic-health-hero .default-content-wrapper > ul li strong {
+    position: absolute;
+    top: 0;
+    top: 10px;
+    font-size: var(--font-size-xxs);
+    max-width: 200px;
+  }
+
+  .section.age-chronic-health-hero .default-content-wrapper > ul {
+    position: initial;
+    margin-bottom: 30px;
+  }
+
+  .section.age-chronic-health-hero .default-content-wrapper > ul li ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .section.age-chronic-health-hero
+    .default-content-wrapper
+    > ul
+    > li:last-child {
+    margin-top: 30px;
+  }
 }

@@ -1,5 +1,5 @@
-# Your Project's Title...
-Your project's description...
+# Know Pneumonia Training Project
+
 
 ## Environments
 - Preview: [https://main--aem-knowpneumonia--easyadin.hlx.page/](https://main--aem-knowpneumonia--easyadin.hlx.page/)
