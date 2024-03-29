@@ -8,6 +8,10 @@
   max-width: 400px;
 }
 
+.information-hero.max-width-800 {
+  max-width: 800px;
+}
+
 .information-hero ul {
   max-width: 900px;
   margin: auto;
