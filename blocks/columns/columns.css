@@ -38,6 +38,14 @@
   margin: 0;
 }
 
+.share-your-story table tr {
+  display: flex;
+}
+
+.share-your-story table tr td:not(:first-child) {
+  /* margin-left: -50px; */
+}
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
