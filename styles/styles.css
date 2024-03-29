@@ -11,6 +11,7 @@
  */
 
 :root {
+  --base-spacing: 4%;
   --max-section-width: 1118px;
 
   /* Brand colors */
@@ -67,8 +68,9 @@
   --nav-height: auto;
 
   /* padding */
-  --base-padding-left: 4%;
-  --base-padding-right: 4%;
+
+  --base-padding-left: var(--base-spacing);
+  --base-padding-right: var(--base-spacing);
 }
 
 @font-face {

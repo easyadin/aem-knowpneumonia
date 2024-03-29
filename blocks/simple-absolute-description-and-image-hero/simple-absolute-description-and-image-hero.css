@@ -1,7 +1,7 @@
 .simple-absolute-description-and-image-hero > div {
   max-width: var(--max-section-width);
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: var(--base-spacing);
+  padding-right: var(--base-spacing);
   margin: auto;
   position: relative;
   display: flex;
@@ -10,18 +10,26 @@
 
 .simple-absolute-description-and-image-hero > div > div:first-child {
   position: absolute;
-  padding-left: 4%;
+  padding-left: var(--base-spacing);
   max-width: 400px;
 }
 
 .simple-absolute-description-and-image-hero h3 {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-lg);
   margin: 0;
+  line-height: normal;
+  color: inherit;
 }
 
 .simple-absolute-description-and-image-hero p {
   font-size: var(--font-size-xxs);
   margin: 0;
+  width: 100%;
+}
+
+.simple-absolute-description-and-image-hero img {
+  width: 100%;
+  display: block;
 }
 
 .simple-absolute-description-and-image-hero
@@ -31,7 +39,11 @@
   display: none;
 }
 
-@media (width <= 768px) {
+.color-green h3 {
+  color: var(--brand-green-2);
+}
+
+@media (width <= 425px) {
   .simple-absolute-description-and-image-hero > div {
     min-height: 300px;
     height: 100%;
@@ -39,10 +51,11 @@
 
   .simple-absolute-description-and-image-hero > div > div {
     height: 100%;
+    width: 100%;
   }
 
   .simple-absolute-description-and-image-hero > div > div:first-child {
-    top: 4%;
+    top: var(--base-spacing);
     max-width: 250px;
   }
 

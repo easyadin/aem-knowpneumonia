@@ -1,7 +1,7 @@
 .section.fragment-container.colored-list-container {
   max-width: var(--max-section-width);
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: var(--base-spacing);
+  padding-right: var(--base-spacing);
   margin: auto;
   margin-bottom: 30px;
 }

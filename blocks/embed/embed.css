@@ -73,8 +73,8 @@ main
   > .section.fragment-container.video-content.embed-container.video-transcript-container {
   max-width: var(--max-section-width);
   margin: auto;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: var(--base-spacing);
+  padding-right: var(--base-spacing);
 }
 
 .section.fragment-container.video-content.embed-container.video-transcript-container

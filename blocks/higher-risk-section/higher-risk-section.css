@@ -8,8 +8,8 @@
   flex-direction: row;
   position: relative;
   margin: auto;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: var(--base-spacing);
+  padding-right: var(--base-spacing);
 }
 
 .higher-risk-section.block > div div:first-child {

@@ -1,0 +1,115 @@
+.take-action-summary {
+  max-width: var(--max-section-width);
+  padding-left: var(--base-spacing);
+  padding-right: var(--base-spacing);
+  margin: auto;
+}
+
+.take-action-summary > div:last-child {
+  display: flex;
+}
+
+.take-action-summary > div:last-child div:first-child {
+  position: relative;
+  padding-right: 16%;
+  max-width: 50%;
+  padding-top: var(--base-spacing);
+}
+
+.take-action-summary > div:last-child div:first-child::after {
+  content: '';
+  position: absolute;
+  background-image: url('https://main--aem-knowpneumonia--easyadin.hlx.live/assets/media_1b4b22692c20e28b5a1ebaa5cf3a7a6f9079e48f5.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  background-color: var(--brand-gray-4);
+}
+
+.take-action-summary > div:last-child div:last-child {
+  background-color: var(--brand-gray-4);
+  font-size: var(--font-size-xs);
+  padding-top: 8%;
+  padding-right: var(--base-padding-right);
+}
+
+.take-action-summary > div:last-child div:first-child p {
+  margin-bottom: 16px;
+}
+
+.take-action-summary > div:last-child div:last-child p:first-child {
+  font-size: var(--font-size-sm);
+  line-height: normal;
+}
+
+.take-action-summary strong {
+  color: var(--brand-purple);
+}
+
+.take-action-summary h3 {
+  font-weight: 500;
+}
+
+.take-action-summary h4,
+.take-action-summary p {
+  margin: 0;
+}
+
+.take-action-summary p,
+.take-action-summary ul li {
+  font-size: var(--font-size-xs);
+}
+
+.take-action-summary ul li::marker {
+  color: var(--brand-purple);
+}
+
+.take-action-summary > div:last-child div:last-child ul {
+  margin-top: 0;
+}
+
+.take-action-summary h4 {
+  font-size: var(--font-size-sm);
+}
+
+@media (width <= 768px) {
+  .take-action-summary > div:last-child {
+    flex-direction: column;
+  }
+
+  .take-action-summary > div:last-child div:first-child::after {
+    background-image: url('https://main--aem-knowpneumonia--easyadin.hlx.live/assets/media_1624e06ea5c178cc644bc0b298526fb75f34f2738.png');
+    height: 80px;
+    bottom: 0;
+    top: revert;
+  }
+
+  .take-action-summary > div:last-child div:last-child {
+    padding-right: 0;
+    padding: 10px;
+  }
+
+  .take-action-summary > div:last-child div:first-child {
+    padding-right: 0;
+    padding-top: 0;
+    max-width: 100%;
+    padding-bottom: 80px;
+  }
+
+  .take-action-summary > div:last-child div:last-child p:first-child {
+    font-size: var(--font-size-xs);
+  }
+
+  .take-action-summary p,
+  .take-action-summary ul li {
+    font-size: var(--font-size-xxs);
+  }
+
+  .take-action-summary h3 {
+    font-size: var(--font-size-sm);
+  }
+}
