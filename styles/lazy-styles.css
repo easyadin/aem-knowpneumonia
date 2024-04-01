@@ -137,6 +137,26 @@
   transform: translateY(6px);
 }
 
+.section.share-story-form-and-testimonies.form-container {
+  display: flex;
+  padding-left: var(--base-padding-left);
+  padding-right: var(--base-padding-right);
+  margin: auto;
+  max-width: var(--max-section-width);
+  position: relative;
+  flex-direction: row;
+}
+
+.section.share-story-form-and-testimonies.form-container > div {
+  flex: 1;
+}
+
+@media (width <=1024px) {
+  .section.share-story-form-and-testimonies.form-container {
+    flex-direction: column;
+  }
+}
+
 @media (width <=700px) {
   .section.age-chronic-health-hero .default-content-wrapper {
     flex-direction: column-reverse;
