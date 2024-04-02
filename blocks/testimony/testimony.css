@@ -55,6 +55,11 @@
   object-fit: contain;
 }
 
+.testimony-container div:last-child {
+  text-align: center;
+  font-size: var(--font-size-xxs);
+}
+
 @media (width <=800px) {
   .testimony {
     flex-direction: column;
