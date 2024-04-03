@@ -21,7 +21,6 @@ import { sampleRUM } from '../../scripts/aem.js';
  * @returns {Promise<FormFieldConfig[]>} Parsed JSON object representing the form configuration, or null if an error occurs.
  */
 const formJSON = async (link) => {
-  console.log({ link });
   if (!link) {
     console.error('Invalid link provided');
     return null;
@@ -60,6 +59,7 @@ const buildForm = (formElement, formConfig) => {
         break;
       case 'fieldset':
         element = document.createElement('fieldset');
+        element.setAttribute('data-label', field.Label);
         element.name = field.Name;
         if (field.Label) {
           const legend = document.createElement('legend');
@@ -72,6 +72,7 @@ const buildForm = (formElement, formConfig) => {
       case 'checkbox':
         element = document.createElement('input');
         element.type = field.Type;
+        element.setAttribute('data-label', field.Label);
         element.name = field.Name;
         element.placeholder = field.Placeholder;
         element.required = field.Mandatory === 'true';
@@ -94,9 +95,7 @@ const buildForm = (formElement, formConfig) => {
         return;
     }
 
-    // Append element to form
     if (element) {
-      // If the field belongs to a specific fieldset, append it there
       if (field.Fieldset) {
         const parentFieldset = formElement.querySelector(
           `fieldset[name="${field.Fieldset}"]`
@@ -115,16 +114,15 @@ function generatePayload(form) {
   const payload = {};
 
   [...form.elements].forEach((field) => {
+    const key = field.dataset.label || field.name;
+
     if (field.name && field.type !== 'submit' && !field.disabled) {
       if (field.type === 'radio') {
-        if (field.checked) payload[field.name] = field.value;
+        if (field.checked) payload[key] = field.value;
       } else if (field.type === 'checkbox') {
-        if (field.checked)
-          payload[field.name] = payload[field.name]
-            ? `${payload[field.name]},${field.value}`
-            : field.value;
+        if (field.checked) payload[key] = field.checked;
       } else {
-        payload[field.name] = field.value;
+        payload[key] = field.value;
       }
     }
   });
@@ -134,7 +132,6 @@ function generatePayload(form) {
 function handleSubmitError(form, error) {}
 
 async function handleSubmit(form, formLink, confirmationLink) {
-  console.log({ formLink });
   if (form.getAttribute('data-submitting') === 'true') return;
 
   const submit = form.querySelector('button[type="submit"]');
@@ -180,6 +177,9 @@ export default async function decorate(block) {
   const confirmationLink = formConfig.find(
     (field) => field.Type === 'confirmation'
   ).Value;
+  const sendTo = formConfig.find((field) => field.Type === 'sendTo').Value;
+  const { pathname } = new URL(sendTo);
+  const postTo = `https://admin.hlx.page/form/easyadin/aem-knowpneumonia/en${pathname}`;
 
   if (formConfig) {
     const form = document.createElement('form');
@@ -191,7 +191,7 @@ export default async function decorate(block) {
       e.preventDefault();
       const valid = form.checkValidity();
       if (valid) {
-        handleSubmit(form, formLink, confirmationLink);
+        handleSubmit(form, postTo, confirmationLink);
       } else {
         const firstInvalidEl = form.querySelector(':invalid:not(fieldset)');
         if (firstInvalidEl) {
