@@ -80,10 +80,22 @@ const buildForm = (formElement, formConfig) => {
 
         if (field.Label) {
           const label = document.createElement('label');
+
           label.textContent = field.Label;
           label.appendChild(element);
           element = label;
+
+          if (field.Type === 'checkbox') {
+            label.className = 'checkbox-label';
+            // add a div box to emulate the checked state
+            const checkBoxVisual = document.createElement('div');
+            checkBoxVisual.className = 'checkbox-visual';
+            label.appendChild(checkBoxVisual);
+          }
+          if (field.Type === 'text') label.className = 'text-label';
+          if (field.Type === 'email') label.className = 'email-label';
         }
+
         break;
       case 'submit':
         element = document.createElement('button');

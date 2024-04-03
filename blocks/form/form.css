@@ -1,2 +1,118 @@
-.share-your-story-form {
+.share-your-story-form form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.share-your-story-form form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.share-your-story-form form fieldset legend,
+.share-your-story-form form h3,
+.share-your-story-form form p {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.share-your-story-form form fieldset legend {
+  font-size: var(--font-size-xs);
+  margin: 10px 0;
+}
+
+.share-your-story-form form fieldset label {
+  display: flex;
+}
+
+.share-your-story-form form .checkbox-label {
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+.share-your-story-form form .checkbox-label input[type='checkbox'] {
+  opacity: 0;
+  position: absolute;
+}
+
+.share-your-story-form form .checkbox-label .checkbox-visual {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid var(--brand-gray-3);
+  margin-right: 10px;
+}
+
+.share-your-story-form
+  form
+  .checkbox-label
+  input[type='checkbox']:checked
+  ~ .checkbox-visual::after {
+  content: '✔';
+  color: var(--brand-green-2);
+  font-size: 16px;
+  text-align: center;
+}
+
+.share-your-story-form form .email-label,
+.share-your-story-form form .text-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.share-your-story-form form .email-label input,
+.share-your-story-form form .text-label input {
+  font-size: var(--font-size-sm);
+  height: 45px;
+  padding-left: calc(var(--base-spacing) / 2);
+  padding-right: calc(var(--base-spacing) / 2);
+}
+
+.share-your-story-form form h3 {
+  font-size: var(--font-size-md);
+}
+
+.share-your-story-form form p {
+  font-size: var(--font-size-xs);
+}
+
+.share-your-story-form form button {
+  height: 45px;
+  width: 100%;
+  max-width: 250px;
+  background-color: var(--brand-purple);
+  border: none;
+  position: relative;
+  color: white;
+  font-size: var(--font-size-xs);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.share-your-story-form form button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 5px solid var(--brand-purple);
+  transform: translateY(-50%);
+}
+
+@media (width <= 768px) {
+  .share-your-story-form form h3 {
+    font-size: var(--font-size-xs);
+  }
 }
